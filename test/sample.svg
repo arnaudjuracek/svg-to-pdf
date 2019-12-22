@@ -7,4 +7,5 @@
   <rect x="0" y="24" width="10" height="10" stroke="#00FF00" fill="#FFFF00 device-cmyk(1, 1, 0, 0)"/>
   <circle cx="5" cy="41" r="5"/>
   <ellipse cx="10" cy="64" rx="10" ry="5"/>
+  <line x1="0" y1="0" x2="120" y2="70" stroke="black device-cmyk(0, 0, 0, 1)" />
 </svg>
