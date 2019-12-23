@@ -5,12 +5,14 @@ const SVG2PDF = require('..')
 const argv = require('minimist')(process.argv.slice(2), {
   alias: { i: 'input', o: 'output' },
   default: {
+    'color-space': 'cmyk',
     input: path.join(__dirname, 'sample.svg'),
     output: undefined
   }
 })
 
 const options = {
+  colorSpace: argv['color-space'],
   docPath: argv.output
 }
 
