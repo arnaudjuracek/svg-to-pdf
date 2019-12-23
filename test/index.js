@@ -17,7 +17,10 @@ const options = {
 try {
   const svgString = fs.readFileSync(argv.input, 'utf8')
   const { warnings, docPath } = SVG2PDF(svgString, options)
-  console.log('⚠  Warning:', warnings)
+  Object.entries(warnings).forEach(([flag, messages]) => {
+    console.log('⚠  Warning:', flag)
+    console.log(messages)
+  })
   console.log('✔  Success:', docPath)
 } catch (err) {
   console.error(err instanceof Error ? err : Error(err))
