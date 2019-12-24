@@ -22,4 +22,5 @@
 
   <rect x="20" y="20" width="80" height="30" stroke="transparent" fill="none" />
   <polyline points="60,0 70,0 70,10 60,10" fill="none" stroke="black device-cmyk(0, 0, 0, 1)" stroke-width="1"/>
+  <polygon points="60,20 70,20 70,30 60,30" fill="none" stroke="black device-cmyk(0, 0, 0, 1)" stroke-width="1"/>
 </svg>
