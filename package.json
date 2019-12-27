@@ -28,7 +28,6 @@
     "convert-length": "^1.0.1",
     "pdfkit": "^0.10.0",
     "svg-parser": "^2.0.2",
-    "svgpath": "^2.2.2",
     "tmp": "^0.1.0"
   },
   "private": false,
