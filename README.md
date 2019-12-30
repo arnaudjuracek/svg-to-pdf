@@ -3,7 +3,22 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
 
 <br>
 
+* [Features](#features)
+  + [Limited support](#limited-support)
+  + [Not supported (yet)](#not-supported-yet)
+  + [Not supported, won't be supported](#not-supported-wont-be-supported)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Development](#development)
+* [Credits](#credits)
+* [Related](#related)
+* [License](#license)
+
+<br>
+<br>
+
 ## Features
+
 - Support for this SVG elements:
   + `<defs>`
   + `<clipPath>`
@@ -43,9 +58,25 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
 
 ### Not supported (yet)
 - `<use>` with `<defs>`
-- CSS styling
 - `skewX` and `skewY` transformation functions
 
+### Not supported, won't be supported
+#### CSS styling
+Use [`svgo`](https://github.com/svg/svgo) beforehand to apply CSS styling as element attributes:
+
+```yaml
+full: false
+plugins:
+  - inlineStyles:
+      useMqs:
+        - ''
+        - screen
+        - print
+  - removeStyleElement
+  - converStyleToAttrs
+```
+
+<sup>**NOTE:** see [`svgo` guide](https://github.com/svg/svgo/blob/master/docs/how-it-works/en.md#1-config) to read more about `svgo` config.</sup>
 ## Installation
 
 ```console
