@@ -31,7 +31,6 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
   + registration marks
 
 ### Limited support
-- `<image>` can be used only with base64 encoded dataURI for now
 - `viewBox` attribute is parsed only on the `<svg>` root element, so all system coordinates must be absolute
 - `<text>` elements are rendered only if they do not have complex structure (such as nested element)
 - Supported `<text>` specific presentation attributes are:
@@ -61,8 +60,9 @@ const SVG2PDF = require('svg-to-pdf')
 const options = {
   docPath: '/tmp/file.pdf',
 
-  // All `font-family=` attributes will be resolved from this root path
-  fontRoot: process.cwd(),
+  // All attributes refering to an external file path will be resolved from this
+  // root path
+  rootPath: process.cwd(),
 
   // color space can be either 'rgb' or 'cmyk'
   colorSpace: 'cmyk',
