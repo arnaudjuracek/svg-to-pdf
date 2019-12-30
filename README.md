@@ -17,6 +17,7 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
   + `<polyline>`
   + `<polygon>`
   + `<image>`
+  + `<text>`
 - **Group inheritance** (ie: `<g color=green>` will pass its `color=green` attribute to its children)
 - All [`PDFKit`](http://pdfkit.org/) vector graphics supported operations
 - PDF **file permissions** and limitations w/ password support
@@ -32,9 +33,16 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
 ### Limited support
 - `<image>` can be used only with base64 encoded dataURI for now
 - `viewBox` attribute is parsed only on the `<svg>` root element, so all system coordinates must be absolute
+- `<text>` elements are rendered only if they do not have complex structure (such as nested element)
+- Supported `<text>` specific presentation attributes are:
+  + `dominant-baseline`
+  + `font-family`
+  + `font-size`
+  + `letter-spacing`
+  + `text-anchor`
+  + `word-spacing`
 
 ### Not supported (yet)
-- `<text>` and font embeding
 - `<use>` with `<defs>`
 - CSS styling
 - `skewX` and `skewY` transformation functions
@@ -52,6 +60,9 @@ const SVG2PDF = require('svg-to-pdf')
 
 const options = {
   docPath: '/tmp/file.pdf',
+
+  // All `font-family=` attributes will be resolved from this root path
+  fontRoot: process.cwd(),
 
   // color space can be either 'rgb' or 'cmyk'
   colorSpace: 'cmyk',

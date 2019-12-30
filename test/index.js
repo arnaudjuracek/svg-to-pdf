@@ -13,7 +13,8 @@ const argv = require('minimist')(process.argv.slice(2), {
 
 const options = {
   colorSpace: argv['color-space'],
-  docPath: argv.output
+  docPath: argv.output,
+  fontRoot: __dirname
 }
 
 try {

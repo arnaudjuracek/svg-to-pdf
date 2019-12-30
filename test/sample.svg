@@ -5,7 +5,7 @@
     </clipPath>
   </defs>
 
-  <text>hello world!</text>
+  <text x="0" y="0" font-family="fonts/friction-mono.otf" fill="black" font-size="10" dominant-baseline="text-top">hello world!</text>
 
   <path d="M 10 10 h 80 v 80 h -80 Z" fill="none" stroke="black device-cmyk(0, 0, 1, 0)"/>
 
