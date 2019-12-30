@@ -58,7 +58,6 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
 
 ### Not supported (yet)
 - `<use>` with `<defs>`
-- `skewX` and `skewY` transformation functions
 
 ### Not supported, won't be supported
 #### CSS styling
