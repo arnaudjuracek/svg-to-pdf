@@ -58,6 +58,7 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
 
 ### Not supported (yet)
 - `<use>` with `<defs>`
+- `%` unit
 
 ### Not supported, won't be supported
 #### CSS styling
