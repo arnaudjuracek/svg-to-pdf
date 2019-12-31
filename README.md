@@ -57,9 +57,7 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
   + `letter-spacing`
   + `text-anchor`
   + `word-spacing`
-
-### Not supported (yet)
-- `%` unit
+- `%` unit _should_ work as intended, but some bugs can occur when working in complex coordinates systems (like viewports deep nest).
 
 ### Not supported, won't be supported
 #### CSS styling
