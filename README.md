@@ -21,7 +21,9 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
 
 - Support for this SVG elements:
   + `<defs>`
+  + `<symbol>`
   + `<clipPath>`
+  + `<use>`
   + `<g>`
   + `<path>`
   + `<rect>`
@@ -57,7 +59,6 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
   + `word-spacing`
 
 ### Not supported (yet)
-- `<use>` with `<defs>`
 - `%` unit
 
 ### Not supported, won't be supported
