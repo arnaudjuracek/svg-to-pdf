@@ -9,7 +9,7 @@
 
   <path d="M 10 10 h 80 v 80 h -80 Z" fill="none" stroke="black device-cmyk(0, 0, 1, 0)"/>
 
-  <rect x="0" y="0" width="120" height="70" stroke="#FFF000 device-cmyk(0, 0, 1, 0)" />
+  <rect fill="none" x="0" y="0" width="120" height="70" stroke="#FFF000 device-cmyk(0, 0, 1, 0)" />
   <rect transform="rotate(45, 5, 5)" x="0" y="0" width="10" height="10" fill="#0000FF device-cmyk(1.00, 0.00, 0.00, 0.00)" />
   <rect x="0" y="12" width="10" height="10" stroke="#0000FF device-cmyk(1, 0, 0, 0)" />
   <rect x="0" y="24" width="10" height="10" stroke="#00FF00" fill="#FFFF00 device-cmyk(1, 1, 0, 0)"/>
