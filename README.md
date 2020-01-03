@@ -121,7 +121,16 @@ const options = {
   keywords: ''
 }
 
-const { warnings } = SVG2PDF(svgString, options)
+// using Promises
+SVG2PDF(svgString, options)
+  .then(({ warnings }) => console.log(warnings))
+  .catch(error => console.error(error))
+
+// using async/await
+;(async () => {
+  const { warnings } = await SVG2PDF(svgString, options)
+  console.log(warnings)
+})()
 ```
 <sup>**Note:** for PDF file related options, see [`PDFKit` options](http://pdfkit.org/docs/getting_started.html#setting_document_metadata).</sup>
 
