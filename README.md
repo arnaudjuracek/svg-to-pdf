@@ -128,12 +128,12 @@ const options = {
 
 // using Promises
 SVG2PDF(svgString, options)
-  .then(({ warnings }) => console.log(warnings))
+  .then(({ warnings, files }) => console.log(warnings))
   .catch(error => console.error(error))
 
 // using async/await
 ;(async () => {
-  const { warnings } = await SVG2PDF(svgString, options)
+  const { warnings, files } = await SVG2PDF(svgString, options)
   console.log(warnings)
 })()
 ```
