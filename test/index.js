@@ -21,15 +21,22 @@ const options = {
   rootPath: __dirname
 }
 
-try {
-  const svgString = fs.readFileSync(argv.input, 'utf8')
-  const { warnings, docPath } = SVG2PDF(svgString, options)
-  Object.entries(warnings).forEach(([flag, messages]) => {
-    console.log('⚠  Warning:', flag)
-    console.log(messages)
-  })
-  console.log('✔  Success:', docPath)
-} catch (err) {
-  console.error(err instanceof Error ? err : Error(err))
-  process.exit(1)
-}
+;(async () => {
+  try {
+    const svgString = await fs.readFile(argv.input, 'utf8')
+    const { docPath, warnings, files } = await SVG2PDF(svgString, options)
+
+    files && console.log('Files report', '\n', files, '\n')
+
+    Object.entries(warnings).forEach(([flag, messages]) => {
+      console.log('⚠  Warning:', flag)
+      console.log(messages)
+      console.log('')
+    })
+
+    console.log('✔  Success:', docPath)
+  } catch (err) {
+    console.error(err instanceof Error ? err : Error(err))
+    process.exit(1)
+  }
+})()

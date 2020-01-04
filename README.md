@@ -90,8 +90,8 @@ const SVG2PDF = require('svg-to-pdf')
 const options = {
   docPath: '/tmp/file.pdf',
 
-  // All attributes refering to an external file path will be resolved from this
-  // root path
+  // All attributes refering to an external file path will be resolved from
+  // this root path
   rootPath: process.cwd(),
 
   // color space can be either 'rgb' or 'cmyk'
@@ -108,6 +108,11 @@ const options = {
     crop: true,
     registration: true
   },
+
+  // Attach an additional [...files] array to the output, providing further
+  // insights on PDF generation.
+  // Be warned that files analysis can be perf heavy.
+  createFilesReport = true,
 
   // PDF file options, see PDFKit
   pdfVersion: 1.3,
