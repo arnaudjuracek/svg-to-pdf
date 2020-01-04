@@ -95,14 +95,14 @@ const options = {
   rootPath: process.cwd(),
 
   // color space can be either 'rgb' or 'cmyk'
-  colorSpace: 'cmyk',
+  colorSpace: 'rgb',
 
   // SVG specification specifies that all unitless lengths are expressed in a
   // so-called "user unit", usually defaulting to pixel
-  userUnit: 'mm', // 'px', 'cm', 'pt', etc…
+  userUnit: 'px', // 'px', 'mm', 'cm', 'pt', 'in'…
 
   // Pre-press related features
-  bleed: 10,
+  bleed: 0, // '10mm', '100px', 10 <userUnit>
   marks: {
     colors: true,
     crop: true,
