@@ -20,7 +20,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "fs-extra": "^8.1.0",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.2"
   },
   "dependencies": {
     "base64mime": "0.0.3",
