@@ -35,12 +35,12 @@
   },
   "private": false,
   "optionalDependencies": {},
-  "homepage": "https://github.com/chevalvert/svg-to-pdf#readme",
+  "homepage": "https://github.com/arnaudjuracek/svg-to-pdf#readme",
   "bugs": {
-    "url": "https://github.com/chevalvert/svg-to-pdf/issues"
+    "url": "https://github.com/arnaudjuracek/svg-to-pdf/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:chevalvert/svg-to-pdf.git"
+    "url": "git+git@github.com:arnaudjuracek/svg-to-pdf.git"
   }
 }

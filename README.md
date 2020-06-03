@@ -1,4 +1,4 @@
-# svg-to-pdf [<img src="https://github.com/chevalvert.png?size=100" align="right">](http://chevalvert.fr/)
+# svg-to-pdf
 _pre-press oriented node.js module to transform a SVG string into printable PDF file_
 
 <br>
@@ -79,7 +79,7 @@ plugins:
 ## Installation
 
 ```console
-$ npm install --save chevalvert/svg-to-pdf
+$ npm install --save arnaudjuracek/svg-to-pdf
 ```
 
 ## Usage
@@ -122,7 +122,7 @@ const options = {
   title: '',
   subject: '',
   author: '',
-  producer: 'chevalvert/svg-to-pdf@semver',
+  producer: 'arnaudjuracek/svg-to-pdf@semver',
   keywords: ''
 }
 
