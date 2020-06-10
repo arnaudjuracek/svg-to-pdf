@@ -49,6 +49,7 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
 
 ### Limited support
 - `viewBox` attribute is parsed only on the `<svg>` root element, so all system coordinates must be absolute
+- The [`preserveAspectRatio`](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio) attribute is fully supported, **but only on the `<image>` element**
 - `<text>` elements are rendered only if they do not have complex structure (such as nested element)
 - Supported `<text>` specific presentation attributes are:
   + `dominant-baseline`
@@ -57,7 +58,7 @@ _pre-press oriented node.js module to transform a SVG string into printable PDF 
   + `letter-spacing`
   + `text-anchor`
   + `word-spacing`
-- `%` unit _should_ work as intended, but some bugs can occur when working in complex coordinates systems (like viewports deep nest).
+- `%` unit _should_ work as intended, but some bugs can occur when working in complex coordinates systems (like viewports deep nest)
 
 ### Not supported, won't be supported
 #### CSS styling
