@@ -80,7 +80,7 @@ plugins:
 ## Installation
 
 ```console
-$ npm install --save arnaudjuracek/svg-to-pdf
+$ npm install --save svg-to-pdf
 ```
 
 ## Usage
