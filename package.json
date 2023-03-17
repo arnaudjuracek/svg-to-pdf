@@ -1,6 +1,6 @@
 {
   "name": "svg-to-pdf",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "transform SVG string to printable PDF",
   "source": "lib/svg-to-pdf.js",
   "main": "lib/svg-to-pdf.js",
